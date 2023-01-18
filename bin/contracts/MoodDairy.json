@@ -1,0 +1,328 @@
+{
+    "contractName": "MoodDairy",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "getMood",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "mood",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_mood",
+                    "type": "string"
+                }
+            ],
+            "name": "setMood",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getMood\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mood\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_mood\",\"type\":\"string\"}],\"name\":\"setMood\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/hisham/Documents/hasura-servers/solid-node/contracts/mood.sol\":\"MoodDairy\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hisham/Documents/hasura-servers/solid-node/contracts/mood.sol\":{\"keccak256\":\"0x997dc8e378b1e1055f14fdc78562de7b41be84e837a9d692a3b8b91ba6baec18\",\"urls\":[\"bzz-raw://87556556cbdc1087b7f0344ebf8fc47bc2373ff807c0bd82f58a730a75388922\",\"dweb:/ipfs/QmVSe2JmsvGxJXxxzyJfNXKP8qzeYu26QbBqhfCvziwHiK\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b50610445806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80635f3cbff51461004657806370ffe53d1461005b5780639d0c139714610079575b600080fd5b6100596100543660046101c7565b610081565b005b610063610091565b6040516100709190610278565b60405180910390f35b61006361011f565b600061008d828261034f565b5050565b6000805461009e906102c6565b80601f01602080910402602001604051908101604052809291908181526020018280546100ca906102c6565b80156101175780601f106100ec57610100808354040283529160200191610117565b820191906000526020600020905b8154815290600101906020018083116100fa57829003601f168201915b505050505081565b60606000805461012e906102c6565b80601f016020809104026020016040519081016040528092919081815260200182805461015a906102c6565b80156101a75780601f1061017c576101008083540402835291602001916101a7565b820191906000526020600020905b81548152906001019060200180831161018a57829003601f168201915b5050505050905090565b634e487b7160e01b600052604160045260246000fd5b6000602082840312156101d957600080fd5b813567ffffffffffffffff808211156101f157600080fd5b818401915084601f83011261020557600080fd5b813581811115610217576102176101b1565b604051601f8201601f19908116603f0116810190838211818310171561023f5761023f6101b1565b8160405282815287602084870101111561025857600080fd5b826020860160208301376000928101602001929092525095945050505050565b600060208083528351808285015260005b818110156102a557858101830151858201604001528201610289565b506000604082860101526040601f19601f8301168501019250505092915050565b600181811c908216806102da57607f821691505b6020821081036102fa57634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561034a57600081815260208120601f850160051c810160208610156103275750805b601f850160051c820191505b8181101561034657828155600101610333565b5050505b505050565b815167ffffffffffffffff811115610369576103696101b1565b61037d8161037784546102c6565b84610300565b602080601f8311600181146103b2576000841561039a5750858301515b600019600386901b1c1916600185901b178555610346565b600085815260208120601f198616915b828110156103e1578886015182559484019460019091019084016103c2565b50858210156103ff5787850151600019600388901b60f8161c191681555b5050505050600190811b0190555056fea2646970667358221220cf0971ff7e93224be7102829a1adac4c53abbe2b436f239f776e33e2ed32554064736f6c63430008100033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c80635f3cbff51461004657806370ffe53d1461005b5780639d0c139714610079575b600080fd5b6100596100543660046101c7565b610081565b005b610063610091565b6040516100709190610278565b60405180910390f35b61006361011f565b600061008d828261034f565b5050565b6000805461009e906102c6565b80601f01602080910402602001604051908101604052809291908181526020018280546100ca906102c6565b80156101175780601f106100ec57610100808354040283529160200191610117565b820191906000526020600020905b8154815290600101906020018083116100fa57829003601f168201915b505050505081565b60606000805461012e906102c6565b80601f016020809104026020016040519081016040528092919081815260200182805461015a906102c6565b80156101a75780601f1061017c576101008083540402835291602001916101a7565b820191906000526020600020905b81548152906001019060200180831161018a57829003601f168201915b5050505050905090565b634e487b7160e01b600052604160045260246000fd5b6000602082840312156101d957600080fd5b813567ffffffffffffffff808211156101f157600080fd5b818401915084601f83011261020557600080fd5b813581811115610217576102176101b1565b604051601f8201601f19908116603f0116810190838211818310171561023f5761023f6101b1565b8160405282815287602084870101111561025857600080fd5b826020860160208301376000928101602001929092525095945050505050565b600060208083528351808285015260005b818110156102a557858101830151858201604001528201610289565b506000604082860101526040601f19601f8301168501019250505092915050565b600181811c908216806102da57607f821691505b6020821081036102fa57634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561034a57600081815260208120601f850160051c810160208610156103275750805b601f850160051c820191505b8181101561034657828155600101610333565b5050505b505050565b815167ffffffffffffffff811115610369576103696101b1565b61037d8161037784546102c6565b84610300565b602080601f8311600181146103b2576000841561039a5750858301515b600019600386901b1c1916600185901b178555610346565b600085815260208120601f198616915b828110156103e1578886015182559484019460019091019084016103c2565b50858210156103ff5787850151600019600388901b60f8161c191681555b5050505050600190811b0190555056fea2646970667358221220cf0971ff7e93224be7102829a1adac4c53abbe2b436f239f776e33e2ed32554064736f6c63430008100033",
+    "sourceMap": "25:219:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "25:219:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;80:74;;;;;;:::i;:::-;;:::i;:::-;;51:18;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;160:81;;;:::i;80:74::-;135:4;:12;142:5;135:4;:12;:::i;:::-;;80:74;:::o;51:18::-;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;160:81::-;199:13;230:4;223:11;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;160:81;:::o;14:127:1:-;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:922;215:6;268:2;256:9;247:7;243:23;239:32;236:52;;;284:1;281;274:12;236:52;324:9;311:23;353:18;394:2;386:6;383:14;380:34;;;410:1;407;400:12;380:34;448:6;437:9;433:22;423:32;;493:7;486:4;482:2;478:13;474:27;464:55;;515:1;512;505:12;464:55;551:2;538:16;573:2;569;566:10;563:36;;;579:18;;:::i;:::-;654:2;648:9;622:2;708:13;;-1:-1:-1;;704:22:1;;;728:2;700:31;696:40;684:53;;;752:18;;;772:22;;;749:46;746:72;;;798:18;;:::i;:::-;838:10;834:2;827:22;873:2;865:6;858:18;913:7;908:2;903;899;895:11;891:20;888:33;885:53;;;934:1;931;924:12;885:53;990:2;985;981;977:11;972:2;964:6;960:15;947:46;1035:1;1013:15;;;1030:2;1009:24;1002:35;;;;-1:-1:-1;1017:6:1;146:922;-1:-1:-1;;;;;146:922:1:o;1073:548::-;1185:4;1214:2;1243;1232:9;1225:21;1275:6;1269:13;1318:6;1313:2;1302:9;1298:18;1291:34;1343:1;1353:140;1367:6;1364:1;1361:13;1353:140;;;1462:14;;;1458:23;;1452:30;1428:17;;;1447:2;1424:26;1417:66;1382:10;;1353:140;;;1357:3;1542:1;1537:2;1528:6;1517:9;1513:22;1509:31;1502:42;1612:2;1605;1601:7;1596:2;1588:6;1584:15;1580:29;1569:9;1565:45;1561:54;1553:62;;;;1073:548;;;;:::o;1626:380::-;1705:1;1701:12;;;;1748;;;1769:61;;1823:4;1815:6;1811:17;1801:27;;1769:61;1876:2;1868:6;1865:14;1845:18;1842:38;1839:161;;1922:10;1917:3;1913:20;1910:1;1903:31;1957:4;1954:1;1947:15;1985:4;1982:1;1975:15;1839:161;;1626:380;;;:::o;2137:545::-;2239:2;2234:3;2231:11;2228:448;;;2275:1;2300:5;2296:2;2289:17;2345:4;2341:2;2331:19;2415:2;2403:10;2399:19;2396:1;2392:27;2386:4;2382:38;2451:4;2439:10;2436:20;2433:47;;;-1:-1:-1;2474:4:1;2433:47;2529:2;2524:3;2520:12;2517:1;2513:20;2507:4;2503:31;2493:41;;2584:82;2602:2;2595:5;2592:13;2584:82;;;2647:17;;;2628:1;2617:13;2584:82;;;2588:3;;;2228:448;2137:545;;;:::o;2858:1352::-;2984:3;2978:10;3011:18;3003:6;3000:30;2997:56;;;3033:18;;:::i;:::-;3062:97;3152:6;3112:38;3144:4;3138:11;3112:38;:::i;:::-;3106:4;3062:97;:::i;:::-;3214:4;;3278:2;3267:14;;3295:1;3290:663;;;;3997:1;4014:6;4011:89;;;-1:-1:-1;4066:19:1;;;4060:26;4011:89;-1:-1:-1;;2815:1:1;2811:11;;;2807:24;2803:29;2793:40;2839:1;2835:11;;;2790:57;4113:81;;3260:944;;3290:663;2084:1;2077:14;;;2121:4;2108:18;;-1:-1:-1;;3326:20:1;;;3444:236;3458:7;3455:1;3452:14;3444:236;;;3547:19;;;3541:26;3526:42;;3639:27;;;;3607:1;3595:14;;;;3474:19;;3444:236;;;3448:3;3708:6;3699:7;3696:19;3693:201;;;3769:19;;;3763:26;-1:-1:-1;;3852:1:1;3848:14;;;3864:3;3844:24;3840:37;3836:42;3821:58;3806:74;;3693:201;-1:-1:-1;;;;;3940:1:1;3924:14;;;3920:22;3907:36;;-1:-1:-1;2858:1352:1:o",
+    "sourcePath": "/Users/hisham/Documents/hasura-servers/solid-node/contracts/mood.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.16+commit.07a7930e"
+    },
+    "ast": {
+        "absolutePath": "/Users/hisham/Documents/hasura-servers/solid-node/contracts/mood.sol",
+        "exportedSymbols": {
+            "MoodDairy": [
+                22
+            ]
+        },
+        "id": 23,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".1"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "MoodDairy",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 22,
+                "linearizedBaseContracts": [
+                    22
+                ],
+                "name": "MoodDairy",
+                "nameLocation": "34:9:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "functionSelector": "70ffe53d",
+                        "id": 3,
+                        "mutability": "mutable",
+                        "name": "mood",
+                        "nameLocation": "65:4:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 22,
+                        "src": "51:18:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "51:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 12,
+                            "nodeType": "Block",
+                            "src": "125:29:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 10,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 8,
+                                            "name": "mood",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "135:4:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 9,
+                                            "name": "_mood",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 5,
+                                            "src": "142:5:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "src": "135:12:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 11,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "135:12:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "5f3cbff5",
+                        "id": 13,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setMood",
+                        "nameLocation": "89:7:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 6,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 5,
+                                    "mutability": "mutable",
+                                    "name": "_mood",
+                                    "nameLocation": "111:5:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 13,
+                                    "src": "97:19:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 4,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "97:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "96:21:0"
+                        },
+                        "returnParameters": {
+                            "id": 7,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "125:0:0"
+                        },
+                        "scope": 22,
+                        "src": "80:74:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 20,
+                            "nodeType": "Block",
+                            "src": "213:28:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 18,
+                                        "name": "mood",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 3,
+                                        "src": "230:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 17,
+                                    "id": 19,
+                                    "nodeType": "Return",
+                                    "src": "223:11:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "9d0c1397",
+                        "id": 21,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getMood",
+                        "nameLocation": "169:7:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 14,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "176:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 17,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 16,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 21,
+                                    "src": "199:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 15,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "199:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "198:15:0"
+                        },
+                        "scope": 22,
+                        "src": "160:81:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 23,
+                "src": "25:219:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "0:245:0"
+    },
+    "functionHashes": {
+        "getMood()": "9d0c1397",
+        "mood()": "70ffe53d",
+        "setMood(string)": "5f3cbff5"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "218600",
+            "executionCost": "263",
+            "totalCost": "218863"
+        },
+        "external": {
+            "getMood()": "infinite",
+            "mood()": "infinite",
+            "setMood(string)": "infinite"
+        }
+    }
+}
